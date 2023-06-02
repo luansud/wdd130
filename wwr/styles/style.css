@@ -58,6 +58,10 @@ nav a:hover{
     text-align: center;
     color: white;
 }
+#hero-img{
+    margin: 0 auto;
+    width: 100%;
+}
 .button-box{
     text-align: center;
 }
