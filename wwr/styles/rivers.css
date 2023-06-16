@@ -69,6 +69,11 @@ header{
     border-top: 2px solid white;
 }
 
+#right{
+    float: right;
+    max-width: 300px;
+    margin: 20px 10px;
+}
 .river_description img{
     max-width: 300px;
     margin: 20px 10px;
@@ -77,9 +82,13 @@ header{
 .river_description h2 {
     font-size: 1em;
     margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .river_description p{
     font-size: 0.8rem;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
@@ -90,7 +99,7 @@ footer{
     color: #FFFFFF;
     font-family: Carlito, Nunito, "Opens Sans";
     padding: 25px 50px;
-    margin-top: 200px;
+    margin-top: 3px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -103,17 +112,18 @@ footer a{
     color: #FFFFFF;
 }
 footer p{
-    font-size: 1.2em;
+    font-size: 1rem;
 }
 footer p a:hover{
     text-decoration: underline;
 }
 footer .social img {
     padding-top: 15px;
+    width: 15%;
 }
 
 .icon {
-    width: 80px;
+    width: 80%;
     padding: 10px;
 }
 
