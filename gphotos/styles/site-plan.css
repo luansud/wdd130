@@ -150,6 +150,11 @@ nav a:hover {
   background-color: #ccc;
   line-height: 3em;
 }
+
+li{
+  list-style: none;
+}
+
 .top {
   grid-area: top;
   border-left: 1px solid;
