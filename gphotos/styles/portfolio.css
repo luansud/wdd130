@@ -26,6 +26,7 @@
 *{
     margin: 0;
     font-family: var(--paragraph-font);
+    box-sizing: inherit;
 }
 a{
     text-decoration: none;
@@ -62,11 +63,42 @@ nav a:hover{
 
 }
 
-.port img{
-    width: 200px;
-    
+.port{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 50px 30% ;
 }
 
+.port_item{
+    position: relative;
+    display: grid;
+}
+
+.port_link img{
+    position: relative;
+    width: 100%;
+    opacity: 0.95;
+    transition: transform 0.8s ease-in-out ;
+}
+
+.port_link:hover{
+    opacity: 1;
+    transform: scale(0.95);
+}
+.port_link:hover .port_title{
+    opacity: 0;
+}
+
+.port_title{
+    position: absolute;
+    top:43%;
+    width: 100%;
+    text-align: center;
+    color: var(--accent2-color);
+    font-size: 2.5rem;
+}
 
 footer{
     flex-shrink: 0;
