@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Carlito&family=Nunito&family=Open+Sans:wght@300&display=swap');
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #C38370 ;
+    --secondary-color: #A45C40 ;
+    --accent1-color: #E4B7A0;
+    --accent2-color: #F6EEED;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: Carlito;
+    --paragraph-font: Carlito, Nunito, "Open Sans";
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #C38370;  /* headlines on a white background */ 
+    --headline-color-on-color: #F6EEED; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #C38370; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: #F6EEED; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #A45C40  ;
+    --nav-link-color: #F6EEED;
+    --nav-background-color: #C38370;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #A45C40;
+  }
+
+*{
+    margin: 0;
+    font-family: var(--paragraph-font);
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+header{
+    display: flex;
+    background-color: var(--primary-color);
+}
+
+#logo{
+    width: 100px;
+    margin: 10px 30px;
+}
+#insta_logo{
+    width: 50px;
+    text-align: center;
+    opacity: 0.5;
+    margin: 10px;
+}
+nav{
+    justify-content: space-around;
+    margin: auto;
+}
+nav a{
+    text-align: center;
+    padding: 0 50px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: var(--accent2-color);
+}
+nav a:hover{
+    color: var(--secondary-color);
+
+}
+
+#contact_container{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+}
+#contact_container img{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
+}
+
+.contact_form{
+    padding: 30px 40px;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+}
+.contact_form form{
+    margin: 20px 0;
+}
+
+form .input-group{
+    margin-bottom: 15px;
+}
+
+form .input-group label{
+    display: block;
+    margin-bottom: 5px;
+}
+form .input-group input{
+    width: 100%;
+    height: 47px;
+    padding: 15px;
+    font-size: 15px;
+    border: 2px solid --primary-color
+}
+
+form .input-group-buttom input{
+    width: 100%;
+    height: 47px;
+    background: var(--secondary-color);
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    color: var(--accent2-color);
+    cursor: pointer;
+    font-size: 16px;
+}
+textarea{
+    width: 100%;
+}
+
+
+footer{
+    flex-shrink: 0;
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+}
+
+#main_footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#footer_bio{
+    display: flex;
+}
+#footer_bio h2{
+    margin: 20px 10px;
+    text-align: left;
+}
+#footer_bio img{
+    width: 150px;
+    margin: 0 0 0 20px;
+}
+#footer_bio p{
+    color: var(--accent2-color);
+    margin-top: 70px;
+    margin-left: 10px;
+    text-align: left;
+    width: 130px;
+}
+
+#siteplan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 27%;
+}
+footer a{
+    text-decoration: none;
+    color: var(--accent2-color);
+}
+footer a:hover{
+    text-decoration:underline
+}
+
+#footer_inf{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 0;
+}
+#footer_inf ul li{
+    list-style: none;
+    margin-left: -30px;
+    margin-top: 4px;
+    text-decoration: none;
+    color: var(--accent2-color);
+}
+
+#copyright{
+    text-align: center;
+}
+

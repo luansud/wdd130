@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="styles/index.css" type="text/css">
+    <link rel="stylesheet" href="styles/contact.css" type="text/css">
 </head>
 <body>
     
     <header>
         <a href="index.html">
-            <img id="logo" src="images/Logo_black.jpg" alt="Glayce photos Logo" />
+            <img id="logo" src="images/Logo_white.png" alt="Glayce photos Logo" />
         </a>
           <nav>
             <a href="index.html">Home</a>
@@ -18,33 +18,39 @@
             <a href="contact.html">Contact Us</a>
           </nav>
         <a href="https://www.instagram.com/glaycefelizolafotos/">
-            <img id="Insta_logo" src="images/icons/insta_logo.png" alt="Instagram Logo" />
+            <img id="insta_logo" src="images/icons/insta_logo.png" alt="Instagram Logo" />
         </a>
     </header>
 
     <main>
-        <section>
+        <section id="contact_container">
             <img src="images/contactus.png" alt="Contact us image">
 
             <div class="contact_form">
-                <form>
-                  <label>First Name</label>
-                  <input type="text" id="first_name" name="firstname" placeholder="Your First Name">
-              
-                  <label>Last Name</label>
-                  <input type="text" id="last_name" name="lastname" placeholder="Your last Name">
-              
-                  <label>Cellphone</label>
-                  <input type="tel" name="tel" id="cellphone">
-
-                  <label>Email</label>
-                  <input type="email" name="email" id="cellphone">
-              
-                  <label for="subject">Subject</label>
-                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-              
-                  <input type="submit" value="Submit">
-              
+                <form action="#">
+                    <div class="input-group">
+                        <label>First Name</label>
+                        <input type="text" id="first_name" name="firstname" placeholder="Your First Name">
+                    </div>
+                    <div class="input-group">
+                        <label>Last Name</label>
+                        <input type="text" id="last_name" name="lastname" placeholder="Your last Name">
+                    </div>
+                    <div class="input-group">
+                        <label>Cellphone</label>
+                        <input type="tel" name="tel" id="cellphone">
+                    </div>
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" name="email" id="cellphone">
+                    </div>
+                    <div class="input-group">
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" style="resize: none" placeholder="Write something.." rows="6"></textarea>
+                    </div>
+                    <div class="input-group-buttom">
+                        <input type="submit" value="Submit">
+                    </div>
                 </form>
               </div>
 
@@ -52,36 +58,36 @@
     </main>
 
     <footer>
-        <section id="footer_bio">
-            <h2>Glayce Felizola</h2>
-            <div>
-                <img src="images/perfil_picture.jpeg" alt="Glayce Picture">
+        <div id="main_footer">
+            <section id="footer_bio">
+                <div>
+                    <h2>Glayce Felizola</h2>
+                    <img src="images/perfil_picture.jpeg" alt="Glayce Picture">
+                </div>
+                <p>I hope that through my love i can connect to many other people and leave a taste of my perspective on their lives.</p>
+            </section>
+    
+            <div id="siteplan">
+                <h2>
+                    <a href="site-plan.html">Site Plan</a>
+                </h2>
             </div>
-            <p>
-                I hope that through my love i can connect to many other people and leave a taste of my perspective on their lives.
-            </p>
-        </section>
-
-        <div>
-            <h2>
-                <a href="site-plan.html">Site Plan</a>
-            </h2>
+            
+            <section id="footer_inf">
+                <h2>More information</h2>
+                <br>
+                <ul>
+                    <li>+55 79 99182-8889</li>
+                    <li><a href="https://wa.me/+557991828889">Send message in whatsapp</a></li>
+                    <li>glaycefelizolafotos@hotmail.com</li>
+                    <li><a href="https://www.instagram.com/glaycefelizolafotos/">Follow in Instagram</a></li>
+                    <li>Aracaju, Sergipe - BRAZIL</li>
+                </ul>
+            </section>
         </div>
-        
-        <section id="footer_inf">
-            <h2>More information</h2>
-            <ul>
-                <li>+55 79 99182-8889</li>
-                <li><a href="https://wa.me/+557991828889">Send message in whatsapp</a></li>
-                <li>glaycefelizolafotos@hotmail.com</li>
-                <li><a href="https://www.instagram.com/glaycefelizolafotos/">Follow in Instagram</a></li>
-                <li>Aracaju, Sergipe - BRAZIL</li>
-            </ul>
-        </section>
         <div id="copyright">
             copyright &copy 2023 - all the right reserved - Glayce Felizola Photos
         </div>
     </footer>
-
 </body>
 </html>
